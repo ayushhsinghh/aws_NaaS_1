@@ -71,7 +71,6 @@ resource "aws_security_group" "allow_wp" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
   egress {
     from_port   = 0
     to_port     = 0
@@ -118,8 +117,6 @@ resource "aws_instance" "wordpress" {
     Name = "wordpress"
   }
 }
-
-
 resource "aws_instance" "mysql" {
   ami                    = var.mysql_ami
   instance_type          = var.instance_type
