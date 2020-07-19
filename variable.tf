@@ -18,4 +18,3 @@ variable "Key_Name" {
     description = "Key Name For Instance"
     default = "Terraform"
 }
-
